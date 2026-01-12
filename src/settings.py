@@ -53,7 +53,10 @@ class Settings:
 
     @property
     def target_channel(self) -> int:
-        return str(self._config["RepostSettings"]["target_channel"])
+        try:
+            return str(self._config["RepostSettings"]["target_channel"])
+        except:
+            return int(self._config["RepostSettings"]["target_channel"])
 
     # ── Paraphrase ──────────────────────────────────────────────────────────────
     @property
