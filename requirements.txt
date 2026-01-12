@@ -1,0 +1,8 @@
+aiofiles>=25.1.0
+httpx[http2]>=0.28.1
+isort>=7.0.0
+openai>=2.15.0
+pyrogram>=2.0.106
+rich>=14.2.0
+ruff>=0.14.10
+tgcrypto>=1.2.5
